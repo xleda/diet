@@ -8,9 +8,9 @@ body {
   font-family: 'Merriweather', Arial, sans-serif, 'Helvetica Neue';
 }
 hr {
-  border-color: rgb(179, 53, 25);
+  border-color: #00b4f1;
   border-width: 3px;
-  max-width: 50px;
+  max-width: 400px;
 }
 hr.light {
   border-color: white;
@@ -45,11 +45,34 @@ p {
   background-color: #222222;
   color: white;
 }
+
+.row {
+  margin: 0px;
+}
+
+.bg-wide {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top;
+  min-height: 800px;
+  background-image: url('../img/wide_cs_1.jpeg');
+}
+
+.bg-grey {
+  min-height: 800px;
+  background-color: #4C4C4D
+}
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
 section {
-  padding: 100px 0;
+  padding: 40px 0 40px 0px;
+}
+.no-padding {
+ padding: 0px;
 }
 aside {
   padding: 50px 0;
@@ -181,7 +204,8 @@ header .header-content .header-content-inner hr {
 header .header-content .header-content-inner p {
   font-weight: 300;
   color: #4C4C4D;
-  font-size: 16px;
+  font-size: xx-large;
+  font-style: italic;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
@@ -198,7 +222,7 @@ header .header-content .header-content-inner p {
   }
   header .header-content .header-content-inner {
     max-width: 1000px;
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: auto;
   }
   header .header-content .header-content-inner h1 {
@@ -206,7 +230,7 @@ header .header-content .header-content-inner p {
     color: #4C4C4D
   }
   header .header-content .header-content-inner p {
-    font-size: 18px;
+    /* font-size: 18px; */
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -214,6 +238,7 @@ header .header-content .header-content-inner p {
 }
 .section-heading {
   margin-top: 0;
+  text-transform: uppercase;
 }
 .service-box {
   max-width: 400px;
@@ -224,12 +249,15 @@ header .header-content .header-content-inner p {
     margin: 20px auto 0;
   }
 }
+
+
 .service-box p {
   margin-bottom: 0;
 }
 
 .text-primary {
-  color: #8DC63F;
+  /* color: #8DC63F; */
+  color: #ffffff;
 }
 
 .btn {
