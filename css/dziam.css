@@ -33,21 +33,58 @@ h5,
 h6 {
   font-family: Arial, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 p {
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
 .bg-primary {
   background-color: #8DC63F;
 }
+
 .bg-dark {
   background-color: #222222;
   color: white;
 }
 
+.img-click {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 15px;
+}
+
+.whiteColor{
+  color: white;
+}
+
 .row {
   margin: 0px;
+}
+
+.text-just {
+  text-align: justify;
+}
+
+.btn {
+  font-size: 24px;
+}
+
+.zoom {
+  padding: 5px;
+  transition: transform 0.5s;
+  min-width: 200px;
+  min-height: 200px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.zoom:hover {
+  -ms-transform: scale(3.5); /* IE 9 */
+  -webkit-transform: scale(3.5); /* Safari 3-8 */
+  transform: scale(3.5); 
+  z-index: 999;
 }
 
 .bg-wide {
@@ -56,30 +93,54 @@ p {
   background-size: cover;
   -o-background-size: cover;
   background-position: top;
-  min-height: 800px;
-  background-image: url('../img/wide_cs_1.jpeg');
+  min-height: 700px;
+  background-image: url('../img/bor.jpg');
+}
+
+.bg-wide-2 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top;
+  min-height: 700px;
+  background-image: url('../img/wide_cs_2.jpeg');
 }
 
 .bg-grey {
-  min-height: 800px;
-  background-color: #4C4C4D
+  min-height: 700px;
+  background-color: #dadadaa6
 }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
+
+.text-box {
+  font-family: Arial, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 35px;
+}
+
+.padd-top {
+  margin-top: 120px;
+}
+
+.font22 {
+  font-size: 22px;
+}
+
 section {
   padding: 40px 0 40px 0px;
 }
+
 .no-padding {
- padding: 0px;
+  padding: 0px;
 }
+
 aside {
   padding: 50px 0;
 }
-.no-padding {
-  padding: 0;
-}
+
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
