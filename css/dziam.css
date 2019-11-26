@@ -15,16 +15,23 @@ hr {
 hr.light {
   border-color: white;
 }
+
+.solid {
+ background-color: white;
+}
+
 a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: #8DC63F;
 }
+
 a:hover,
 a:focus {
   color: #eb3812;
 }
+
 h1,
 h2,
 h3,
@@ -35,12 +42,12 @@ h6 {
 }
 
 p {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-.bg-primary {
+.bg-prim {
   background-color: #8DC63F;
 }
 
@@ -53,6 +60,10 @@ p {
   max-width: 100%;
   max-height: 100%;
   padding: 15px;
+}
+
+.fixed-top {
+  transition: 0.5s;
 }
 
 .whiteColor{
@@ -71,20 +82,18 @@ p {
   font-size: 24px;
 }
 
-.zoom {
-  padding: 5px;
-  transition: transform 0.5s;
-  min-width: 200px;
-  min-height: 200px;
-  margin: 0 auto;
-  background-size: cover;
+.accordion .card-header:after {
+  font-family: 'FontAwesome';  
+  content: "\f068";
+  float: right; 
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f067"; 
 }
 
-.zoom:hover {
-  -ms-transform: scale(3.5); /* IE 9 */
-  -webkit-transform: scale(3.5); /* Safari 3-8 */
-  transform: scale(3.5); 
-  z-index: 999;
+.card-header {
+  background-color: #8DC63F;
 }
 
 .bg-wide {
@@ -109,6 +118,10 @@ p {
 
 .bg-grey {
   min-height: 700px;
+  background-color: #dadadaa6
+}
+
+.bg-grey-fluid {
   background-color: #dadadaa6
 }
 
@@ -316,7 +329,7 @@ header .header-content .header-content-inner p {
   margin-bottom: 0;
 }
 
-.text-primary {
+.text-prim {
   /* color: #8DC63F; */
   color: #ffffff;
 }

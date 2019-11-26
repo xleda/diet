@@ -12,7 +12,7 @@
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
-        target: '.navbar-fixed-top',
+        target: 'fixed-top',
         offset: 51
     });
 
@@ -21,12 +21,17 @@
         $('.navbar-toggle:visible').click();
     });
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
+    $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 200) { 
+              $('.navbar-expand-lg').addClass('solid');
+          } else {
+              $('.navbar-expand-lg').removeClass('solid');
+          }
+        });
+});
 
     $(function() {
 		$('.pop').on('click', function() {
