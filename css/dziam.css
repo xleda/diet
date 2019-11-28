@@ -70,6 +70,12 @@ p {
   color: white;
 }
 
+.carousel-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: oblique;
+}
+
 .row {
   margin: 0px;
 }
@@ -122,7 +128,8 @@ p {
 }
 
 .bg-grey-fluid {
-  background-color: #dadadaa6
+  background-color: #dadadaa6;
+  min-height: 600px;
 }
 
 .text-faded {
